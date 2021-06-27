@@ -1,2 +1,3 @@
-$('#js-new-birthday').append("<%= j(render 'birthdays/birthday') %>");
+$('#js-new-birthday').html("<%= j(render 'birthdays/birthday') %>");
 $('.birthday-form').hide();
+$('.birthday-update').show();

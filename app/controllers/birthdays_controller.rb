@@ -10,6 +10,10 @@ class BirthdaysController < ApplicationController
     @birthday.save
   end
 
+  def edit
+    @birthday = Birthday.find(params[:id])
+  end
+
   def update
   end
 end
