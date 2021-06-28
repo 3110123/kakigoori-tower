@@ -12,6 +12,15 @@ var t2 = null;
 var t3 = null;
 var t4 = null;
 
+var inputNumber = document.getElementById("inputnumber");
+var inputMonth = inputNumber.dataset.monthId
+var inputDay = inputNumber.dataset.dayId
+
+if (inputMonth.length === 1){
+  inputMonth = 0 + inputMonth;
+}
+inputArray = (inputMonth + inputDay);
+
 var arr = [];
 
 function start() {
@@ -39,16 +48,16 @@ function start() {
     // setInterval 間隔の早さを設定
     t1 = setInterval(function () {
       month01.value = (+month01.value + 1) % 10;
-    }, 200);
+    }, 1000);
     t2 = setInterval(function () {
       month02.value = (+month02.value + 1) % 10;
-    }, 200);
+    }, 1000);
     t3 = setInterval(function () {
       day01.value = (+day01.value + 1) % 10;
-    }, 200);
+    }, 1000);
     t4 = setInterval(function () {
       day02.value = (+day02.value + 1) % 10;
-    }, 200);
+    }, 1000);
 }
 
 function stop1() {
@@ -88,16 +97,17 @@ function stop4() {
 }
 
 function check() {
+  if (arr.length === 4) {
+    arr = arr.join("")
     console.log("arr: " + arr);
-  if (arr.length === 4){
-  $.ajax({
-    type: "get",
-    url: "/",
-    data: {
-      number: arr
+    console.log("inputArray: " + inputArray);
+    if (inputArray === arr) {
+      alert("正解");
+    } else {
+      alert("はずれ");
     }
-  })
-}
+    arr.length = 0;
+  }
 }
 
 startSlot.addEventListener('click', start);

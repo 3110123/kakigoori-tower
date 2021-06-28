@@ -1,3 +1,5 @@
+あなたの誕生日を入力しましょう！
+
 <div class="birthday-form">
   <%= form_with url: birthdays_path, scope: :q do |f| %>
   <%= f.date_select(:birthday, order:[:year,:month,:day], use_month_numbers:true, discard_year:true, date_separator:" / ") %>
@@ -33,5 +35,10 @@
     <button type="button" id="b4">stop</button>
   </div>
 </div>
+<p>いえーーーーーーーーい</p>
+<p>いえーい</p>
+<div id="<%= @num %>"></div>
+<div id="<%= @birthday_number %>"></div>
+
 
 <%= javascript_pack_tag "birthday_slot" %>
