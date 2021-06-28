@@ -1,3 +1,34 @@
+.container h1 {
+  padding-top: 100px;
+}
+
+.month {
+  width: 100px;
+  height: 70px;
+  font-size: 3rem;
+}
+
+.day {
+  width: 100px;
+  height: 70px;
+  font-size: 3rem;
+}
+
+.set-birthday-btn {
+  background-color: aquamarine;
+  border-radius: 10%;
+  width: 100px;
+  height: 70px;
+}
+
+.cake {
+  margin-top: 100px;
+}
+
+.birthday-display {
+  font-size: 3rem;
+}
+
 .birthday-update {
   display: none;
 }
@@ -6,6 +37,7 @@
   display: none;
 }
 
+.birthday {
 input {
   width:1em;
   font-size:30px;
@@ -21,4 +53,5 @@ button {
   float:left;
   width:50px;
   text-align:center;
+}
 }
