@@ -7,15 +7,13 @@
   <% end %>
 </div>
 <div id="js-new-birthday">
-  <% if @birthday.present? %>
-    <%= render @birthday, birthday: @birthday %>
-  <% end %>
 </div>
 <div class="birthday-update">
   <%= button_to "戻る", root_path, method: :get %>
 </div>
 <br>
-<br>  
+<br>
+<div class="js-slot-button">
 <button type="button" id="start">start</button>
 <div class="birthday">
   <div>
@@ -35,10 +33,6 @@
     <button type="button" id="b4">stop</button>
   </div>
 </div>
-<p>いえーーーーーーーーい</p>
-<p>いえーい</p>
-<div id="<%= @num %>"></div>
-<div id="<%= @birthday_number %>"></div>
-
+</div>
 
 <%= javascript_pack_tag "birthday_slot" %>

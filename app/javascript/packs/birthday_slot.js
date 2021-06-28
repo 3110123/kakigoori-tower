@@ -24,6 +24,7 @@ inputArray = (inputMonth + inputDay);
 var arr = [];
 
 function start() {
+    arr.length = 0;
     if (t1) {
       // セットしたタイマーを解除
         clearInterval(t1);
@@ -98,15 +99,12 @@ function stop4() {
 
 function check() {
   if (arr.length === 4) {
-    arr = arr.join("")
-    console.log("arr: " + arr);
-    console.log("inputArray: " + inputArray);
-    if (inputArray === arr) {
+    resultArr = arr.join("")
+    if (inputArray === resultArr) {
       alert("正解");
     } else {
       alert("はずれ");
     }
-    arr.length = 0;
   }
 }
 
