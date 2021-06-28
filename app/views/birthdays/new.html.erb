@@ -12,3 +12,26 @@
 <div class="birthday-update">
   <%= button_to "戻る", root_path, method: :get %>
 </div>
+<br>
+<br>  
+<button type="button" id="start">start</button>
+<div class="birthday">
+  <div>
+    <input type="text" id="month01">
+    <button type="button" id="b1">stop</button>
+  </div>
+  <div>
+    <input type="text" id="month02">
+    <button type="button" id="b2">stop</button>
+  </div>
+  <div>
+    <input type="text" id="day01">
+    <button type="button" id="b3">stop</button>
+  </div>
+  <div>
+    <input type="text" id="day02">
+    <button type="button" id="b4">stop</button>
+  </div>
+</div>
+
+<%= javascript_pack_tag "birthday_slot" %>
