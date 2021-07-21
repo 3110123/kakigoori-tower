@@ -26,7 +26,7 @@ function countdown(setTime, id) {
   if (diffSec <= 0) {
     // セットしたタイマーを解除
     clearInterval(timeId);
-    text = "スタート";
+    text = `<div class="start-fadeout">スタート</div>`;
     countdownSec(10000, '#sec');
   }
   document.querySelector(id).innerHTML = text;
