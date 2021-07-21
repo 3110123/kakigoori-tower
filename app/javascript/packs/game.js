@@ -5,49 +5,54 @@ Swal.fire({
   icon: 'warning',
   confirmButtonText: 'スタート',
 }).then(() => {
-  let totalTime = 3000;
-  const oldTime = Date.now();
+  countdown(3000, '#countdown')
+});
 
+function countdown(setTime, id) {
+  let totalTime = setTime;
+  // 読み込まれた最初の時間
+  const oldTime = Date.now();
+  // タイマーをセット
   const timeId = setInterval(() => {
+  // 読み込まれ続ける時間
   const currentTime = Date.now();
 
   const diff = currentTime - oldTime;
   const diffSec = totalTime - diff;
-
+  // Math.ceil()関数は引数として与えた数以上の最小の整数を返す
   const remainSec = Math.ceil(diffSec / 1000);
   let text = `<div class="countdown-number">${remainSec}</div>`;
 
   if (diffSec <= 0) {
+    // セットしたタイマーを解除
     clearInterval(timeId);
     text = "スタート";
+    countdownSec(10000, '#sec');
   }
+  document.querySelector(id).innerHTML = text;
+  });
+}
 
-  document.querySelector('#countdown').innerHTML = text;
-});
+function countdownSec(setTime, id) {
+  let totalTime = setTime;
+  // 読み込まれた最初の時間
+  const oldTime = Date.now();
+  // タイマーをセット
+  const timeId = setInterval(() => {
+  // 読み込まれ続ける時間
+  const currentTime = Date.now();
 
-});
+  const diff = currentTime - oldTime;
+  const diffSec = totalTime - diff;
+  // Math.ceil()関数は引数として与えた数以上の最小の整数を返す
+  const remainSec = Math.ceil(diffSec / 1000);
+  let text = `残り${remainSec}秒`;
 
-// let totalTime = 10000;
-// const oldTime = Date.now();
-
-// const timeId = setInterval(() => {
-// const currentTime = Date.now();
-// // 差分を求める
-// const diff = currentTime - oldTime;
-// const diffSec = totalTime - diff;
-
-// //ミリ秒を整数に変換
-// const remainSec = Math.ceil(diffSec / 1000);
-// let text = `残り${remainSec}秒`;
-
-// // 0秒以下になったら
-// if (diffSec <= 0) {
-//   clearInterval(timeId);
-//   // タイマー終了の文言を表示する
-//   text = "終了";
-// }
-
-// // 画面に表示する
-// document.querySelector('#sec').innerHTML = text;
-// });
-// countdown
+  if (diffSec <= 0) {
+    // セットしたタイマーを解除
+    clearInterval(timeId);
+    text = "終了";
+  }
+  document.querySelector(id).innerHTML = text;
+  });
+}
