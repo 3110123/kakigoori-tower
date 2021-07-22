@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def game
   end
+
+  def result
+  end
 end
