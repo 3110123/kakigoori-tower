@@ -106,14 +106,15 @@ body {
   }
   .result-img {
     width: 100%;
+    height: 500px;
   }
   .kakigoori-red-img {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 350px;
-    width: 350px;
-    height: 350px;
+    top: 250px;
+    width: 320px;
+    height: 320px;
   }
 }
 
@@ -213,6 +214,7 @@ body {
   }
   .result-img {
     width: 100%;
+    height: 300px;
   }
   .kakigoori-red-img {
     position: absolute;
