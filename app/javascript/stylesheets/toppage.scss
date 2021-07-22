@@ -1,101 +1,322 @@
 body {
-  background-color: rgb(218, 217, 216);
+  height: 100%;
+  background-color: rgb(99, 205, 247);
   .container {
-    max-width: 800px;
+    max-width: 1000px;
+  }
+}
+
+// PC
+@media screen and (max-width: 2000px) {
+  .sun-image {
+    width: 500px;
+    height: 500px;
+  }
+  .game-sun-image {
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+  .start-fadeout {
+    font-size: 100px;
+  }
+  .tsuika10 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 195px;
+    z-index: 10;
+    display: none;
+  }
+  .tsuika20 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 215px;
+    z-index: 20;
+    display: none;
+  }
+  .tsuika30 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 235px;
+    z-index: 30;
+    display: none;
+  }
+  .tsuika40 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 255px;
+    z-index: 40;
+    display: none;
+  }
+  .tsuika50 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 275px;
+    z-index: 50;
+    display: none;
+  }
+  .tsuika60 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 290px;
+    z-index: 60;
+    display: none;
+  }
+  .tsuika70 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 310px;
+    z-index: 70;
+    display: none;
+  }
+  .tsuika80 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 330px;
+    z-index: 80;
+    display: none;
+  }
+  .tsuika90 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 350px;
+    z-index: 90;
+    display: none;
+  }
+  .tsuika100 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 370px;
+    z-index: 100;
+    display: none;
+  }
+}
+
+// スマホ
+@media screen and (max-width: 500px) {
+  .sun-image {
+    width: 300px;
+    height: 300px;
+  }
+  .game-sun-image {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+  .start-fadeout {
+    font-size: 40px;
+  }
+  .tsuika10 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 195px;
+    z-index: 10;
+    display: none;
+  }
+  .tsuika20 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 215px;
+    z-index: 20;
+    display: none;
+  }
+  .tsuika30 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 235px;
+    z-index: 30;
+    display: none;
+  }
+  .tsuika40 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 255px;
+    z-index: 40;
+    display: none;
+  }
+  .tsuika50 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 275px;
+    z-index: 50;
+    display: none;
+  }
+  .tsuika60 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 290px;
+    z-index: 60;
+    display: none;
+  }
+  .tsuika70 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 310px;
+    z-index: 70;
+    display: none;
+  }
+  .tsuika80 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 330px;
+    z-index: 80;
+    display: none;
+  }
+  .tsuika90 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 350px;
+    z-index: 90;
+    display: none;
+  }
+  .tsuika100 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 370px;
+    z-index: 100;
+    display: none;
   }
 }
 
 .title {
-  margin-top: 300px;
-  margin-bottom: 300px;
-}
-
-.position-right {
-  text-align: right;
-}
-
-.position-left {
-  text-align: left;
-}
-
-
-/*吹き出し*/
-.balloon_l,
-.balloon_r{
-  margin: 30px 0;
-  display:flex;
-  justify-content: flex-start;
-  align-items: flex-start; 
-}
-
-.balloon_r{
-  justify-content:flex-end;
-  .says {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 17px 13px 15px 18px;
-    border-radius: 12px;
-    background: white;
-    box-sizing:border-box;
-    margin:0 !important;
-    line-height:1.5;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  display: inline;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
   }
 }
 
-.says {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 17px 13px 15px 18px;
-  border-radius: 12px;
-  background: #1eff8f;
-  box-sizing:border-box;
-  margin:0 !important;
-  line-height:1.5;
-}
-
-.says p{
-  margin:8px 0 0 !important; 
-}
-
-.says p:first-child{
-  margin-top:0 !important;
-}
-
-.says:after {
-  content: "";
+.start-btn {
   position: absolute;
-  border: 10px solid transparent;
+  left: 50%;
+  bottom: 30px;
+  display: inline;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 30px;
+    padding: 10px 70px;
+  }
 }
 
-.balloon_l .says:after {
-  left: -26px;
-  border-right: 22px solid #1eff8f;
+.timer {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  height: 81px;
+  background-color: rgba(255, 255, 255, 0.514);
 }
 
-.balloon_r .says:after {
-  right: -26px;
-  border-left: 22px solid white;
+#sec {
+  font-size: 50px;
 }
 
-.btn-square {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+.table {
+  background-color: rgb(252, 230, 197);
+  height: 180px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: inline;
+  transform: translate(-50%, 0);
+  z-index: 1;
 }
 
-.line-button {
-  text-align:center;
-  margin-top: 200px;
+.kakigoori {
+  position: absolute;
+  bottom: 130px;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.btn-square:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  border-bottom: none;
+.kakigoori-img {
+  width: 100px;
+  height: 100px;
+}
+
+.tsuila-kakigoori-img {
+  width: 70px;
+  height: 70px;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  height: 140px;
+  width: 100%;
+  z-index: 1;
+}
+
+.click-button {
+  background-color: rgb(255, 93, 93);
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.countdown-number {
+  font-size: 100px;
+}
+
+.start-fadeout {
+  animation: 1s fadeOut;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  0% { 
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
+
+.counter {
+  margin-top: 150px;
+  font-size: 30px;
 }
