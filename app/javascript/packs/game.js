@@ -1,5 +1,6 @@
-import { nodeName } from 'jquery';
 import Swal from 'sweetalert2'
+
+const state = { count: 0 };
 
 Swal.fire({
   text: '10秒間、下のボタンを連打してかき氷を高く積み上げましょう！',
@@ -59,6 +60,7 @@ function countdownSec(setTime, id) {
 }
 
 function clickFrequency() {
-  console.log("クリック");
+  const counter = document.querySelector('#press-button');
+  counter.innerHTML = ++state.count;
 }
  
