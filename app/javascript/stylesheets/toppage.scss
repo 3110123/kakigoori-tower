@@ -20,6 +20,86 @@ body {
   .start-fadeout {
     font-size: 100px;
   }
+  .tsuika10 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 195px;
+    z-index: 10;
+    display: none;
+  }
+  .tsuika20 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 215px;
+    z-index: 20;
+    display: none;
+  }
+  .tsuika30 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 235px;
+    z-index: 30;
+    display: none;
+  }
+  .tsuika40 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 255px;
+    z-index: 40;
+    display: none;
+  }
+  .tsuika50 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 275px;
+    z-index: 50;
+    display: none;
+  }
+  .tsuika60 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 290px;
+    z-index: 60;
+    display: none;
+  }
+  .tsuika70 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 310px;
+    z-index: 70;
+    display: none;
+  }
+  .tsuika80 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 330px;
+    z-index: 80;
+    display: none;
+  }
+  .tsuika90 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 350px;
+    z-index: 90;
+    display: none;
+  }
+  .tsuika100 {
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    bottom: 370px;
+    z-index: 100;
+    display: none;
+  }
 }
 
 // スマホ
@@ -35,6 +115,86 @@ body {
   }
   .start-fadeout {
     font-size: 40px;
+  }
+  .tsuika10 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 195px;
+    z-index: 10;
+    display: none;
+  }
+  .tsuika20 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 215px;
+    z-index: 20;
+    display: none;
+  }
+  .tsuika30 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 235px;
+    z-index: 30;
+    display: none;
+  }
+  .tsuika40 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 255px;
+    z-index: 40;
+    display: none;
+  }
+  .tsuika50 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 275px;
+    z-index: 50;
+    display: none;
+  }
+  .tsuika60 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 290px;
+    z-index: 60;
+    display: none;
+  }
+  .tsuika70 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 310px;
+    z-index: 70;
+    display: none;
+  }
+  .tsuika80 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 330px;
+    z-index: 80;
+    display: none;
+  }
+  .tsuika90 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 350px;
+    z-index: 90;
+    display: none;
+  }
+  .tsuika100 {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    bottom: 370px;
+    z-index: 100;
+    display: none;
   }
 }
 
@@ -103,6 +263,11 @@ body {
 .kakigoori-img {
   width: 100px;
   height: 100px;
+}
+
+.tsuila-kakigoori-img {
+  width: 70px;
+  height: 70px;
 }
 
 .button {

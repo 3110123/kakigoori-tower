@@ -62,5 +62,55 @@ function countdownSec(setTime, id) {
 function clickFrequency() {
   const counter = document.querySelector('#press-button');
   counter.innerHTML = ++state.count;
+
+  if (counter.innerHTML == 10) {
+    const tsuika10 = document.querySelector('.tsuika10');
+    tsuika10.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 20) {
+    const tsuika20 = document.querySelector('.tsuika20');
+    tsuika20.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 30) {
+    const tsuika30 = document.querySelector('.tsuika30');
+    tsuika30.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 40) {
+    const tsuika40 = document.querySelector('.tsuika40');
+    tsuika40.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 50) {
+    const tsuika50 = document.querySelector('.tsuika50');
+    tsuika50.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 60) {
+    const tsuika60 = document.querySelector('.tsuika60');
+    tsuika60.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 70) {
+    const tsuika70 = document.querySelector('.tsuika70');
+    tsuika70.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 80) {
+    const tsuika80 = document.querySelector('.tsuika80');
+    tsuika80.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 90) {
+    const tsuika90 = document.querySelector('.tsuika90');
+    tsuika90.style.display = 'block';
+  }
+
+  if (counter.innerHTML == 100) {
+    const tsuika100 = document.querySelector('.tsuika100');
+    tsuika100.style.display = 'block';
+  }
 }
  
