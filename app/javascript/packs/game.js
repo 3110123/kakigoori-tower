@@ -54,7 +54,13 @@ function countdownSec(setTime, id) {
     clearInterval(timeId);
     text = "終了";
     clickButton.style['pointer-events'] = 'none';
-    setTimeout(resultPage, 3000);
+    
+    const btn = document.getElementById('press-button');
+    const score = btn.innerHTML
+    console.log(score);
+    sessionStorage.setItem('userScore', score);
+    
+    setTimeout(resultPage, 2000);
     }
   document.querySelector(id).innerHTML = text;
   });

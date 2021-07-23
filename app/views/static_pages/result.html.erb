@@ -8,7 +8,9 @@
     <p>のかき氷ができました！</p>
   </div>
 
-  <%= link_to 'Twitter', "https://twitter.com/share?&url=https://otsumamiko.app/&text=マルcmのかき氷を作りました！&hashtags=かき氷作り,かき氷メーカー&lang=ja", target: :_blank, rel: 'noopener noreferrer', class: "btn twitter-share text-light" %><br>
+  <%= link_to 'Twitter', "", target: :_blank, rel: 'noopener noreferrer', class: "btn twitter-share text-light" %><br>
 
   <%= link_to "もう一回作る", game_path %>
 </div>
+
+<%= javascript_pack_tag "result" %>
