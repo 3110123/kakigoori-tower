@@ -57,7 +57,6 @@ function countdownSec(setTime, id) {
     
     const btn = document.getElementById('press-button');
     const score = btn.innerHTML
-    console.log(score);
     sessionStorage.setItem('userScore', score);
     
     setTimeout(resultPage, 2000);
