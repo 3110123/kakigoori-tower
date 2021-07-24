@@ -25,4 +25,7 @@ if (text < "20cm") {
 } else if ("90cm" <= text) {
   let text = `もしや新記録更新！？`;
   document.querySelector('#comment').innerHTML = text;
+} else if (text == "nullcm") {
+  let text = `先に結果を見るなんて...さすがエンジニアです。`;
+  document.querySelector('#comment').innerHTML = text;
 }
