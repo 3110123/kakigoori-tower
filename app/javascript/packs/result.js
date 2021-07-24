@@ -7,7 +7,10 @@ const url = `https://twitter.com/share?&url=https://kakigoori-tower.herokuapp.co
 
 link.setAttribute('href', url);
 
-if (text < "20cm") {
+if (text == "nullcm") {
+  let text = `先に結果を見るなんて...さすがエンジニアです。`;
+  document.querySelector('#comment').innerHTML = text;
+} else if (text < "20cm") {
   let text = `修行が足りません。出直してください。`;
   document.querySelector('#comment').innerHTML = text;
 } else if ("20cm" <= text && text < "40cm") {
@@ -24,8 +27,5 @@ if (text < "20cm") {
   document.querySelector('#comment').innerHTML = text;
 } else if ("90cm" <= text) {
   let text = `もしや新記録更新！？`;
-  document.querySelector('#comment').innerHTML = text;
-} else if (text == "nullcm") {
-  let text = `先に結果を見るなんて...さすがエンジニアです。`;
   document.querySelector('#comment').innerHTML = text;
 }
