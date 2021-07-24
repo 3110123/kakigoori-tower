@@ -7,7 +7,7 @@ const url = `https://twitter.com/share?&url=https://kakigoori-tower.herokuapp.co
 
 link.setAttribute('href', url);
 
-if (score == "nullcm") {
+if (text == "nullcm") {
   let text = `先に結果を見るなんて...さすがエンジニアです。`;
   document.querySelector('#comment').innerHTML = text;
 } else if (0 <= score && score < 20) {
