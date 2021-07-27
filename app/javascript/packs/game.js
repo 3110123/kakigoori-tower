@@ -54,6 +54,12 @@ function countdownSec(setTime, id) {
     clearInterval(timeId);
     text = "終了";
     clickButton.style['pointer-events'] = 'none';
+    
+    const btn = document.getElementById('press-button');
+    const score = btn.innerHTML
+    sessionStorage.setItem('userScore', score);
+    
+    setTimeout(resultPage, 2000);
     }
   document.querySelector(id).innerHTML = text;
   });
@@ -113,4 +119,7 @@ function clickFrequency() {
     tsuika100.style.display = 'block';
   }
 }
- 
+
+function resultPage() {
+  window.location.href = location.origin + '/result';
+}

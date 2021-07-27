@@ -1,0 +1,17 @@
+<% content_for :title do %>result<% end %>
+<div class="container text-center p-0">
+  <%= image_tag "bg-img.jpg", class: "result-img" %>
+  <%= image_tag "kakigoori_red.png", class: "kakigoori-red-img" %>
+
+  <div class="result-container">
+    <h1 id="score"></h1>
+    <p>のかき氷ができました！</p>
+    <p id="comment"></p>
+  </div>
+
+  <%= link_to 'Twitter', "", target: :_blank, rel: 'noopener noreferrer', class: "btn twitter-share text-light" %><br>
+
+  <%= link_to "もう一回作る", game_path %>
+</div>
+
+<%= javascript_pack_tag "result" %>

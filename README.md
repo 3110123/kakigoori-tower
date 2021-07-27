@@ -1,24 +1,27 @@
-# README
+![ogp_twitter_card](https://user-images.githubusercontent.com/76991496/127098785-ff20155e-76fd-42a3-83a5-cdf7ff8228b1.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリURL
 
-Things you may want to cover:
+https://kakigoori-tower.herokuapp.com/
 
-* Ruby version
+## サービス概要
 
-* System dependencies
+7/19~7/25に開催されたweb1weekで作成しました。
+ボタンを連打してかき氷を積み上げましょう！
 
-* Configuration
+https://crieit.net/boards/web1week-202107/90908ccbd229e0d3225d8c9b1f15e4a8
 
-* Database creation
+## 使用技術
 
-* Database initialization
+### バックエンド
 
-* How to run the test suite
+- Ruby 2.7.2
+- Rails 6.0.3
 
-* Services (job queues, cache servers, search engines, etc.)
+### フロントエンド
 
-* Deployment instructions
+- HTML
+- CSS(SCSS)
+- JavaScript
+- bootstrap5
 
-* ...

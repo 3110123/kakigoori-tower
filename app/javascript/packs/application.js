@@ -10,7 +10,6 @@ require("channels")
 
 import 'bootstrap';
 import '../stylesheets/application';
-import 'sweetalert2/src/sweetalert2.scss'
 
 
 var jQuery = require('jquery')
